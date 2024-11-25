@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhy.mapper.AliAttachMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zhy.dataobject.AliAttachDO">
+        <id column="id" property="id" />
+        <result column="is_valid" property="valid" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="create_by" property="createBy" />
+        <result column="gmt_modify" property="gmtModify" />
+        <result column="modify_by" property="modifyBy" />
+        <result column="type_id" property="typeId" />
+        <result column="file_name" property="fileName" />
+        <result column="file_size" property="fileSize" />
+        <result column="original_file_name" property="originalFileName" />
+        <result column="content_type" property="contentType" />
+        <result column="file_extension" property="fileExtension" />
+        <result column="md5" property="md5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        is_valid,
+        gmt_create,
+        create_by,
+        gmt_modify,
+        modify_by,
+        id, type_id, file_name, file_size, original_file_name, content_type, file_extension, md5
+    </sql>
+
+</mapper>

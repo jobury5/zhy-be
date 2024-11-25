@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhy.mapper.FlowTaskMapper">
+
+    <!-- 通用查询映射结果 -->
+<!--    <resultMap id="TaskMap" type="com.zhy.dataobject.approveflow.FlowTaskDO">-->
+<!--        <result column="instance_id" property="instanceId" />-->
+<!--        <result column="task_id" property="taskId" />-->
+<!--        <result column="task_name" property="taskName" />-->
+<!--        <result column="actor_id" property="actorId" />-->
+<!--        <result column="actor_name" property="actorName" />-->
+<!--        <result column="business_key" property="businessKey" />-->
+<!--        <result column="process_id" property="processId" />-->
+<!--    </resultMap>-->
+
+<!--    <select id="selectTodoTaskList" resultMap="TaskMap">-->
+<!--        SELECT t.instance_id, t.id as task_id, t.task_name, ta.actor_id, ta.actor_name, fi.business_key, fi.process_id-->
+<!--        FROM flw_task t, flw_task_actor ta, flw_instance fi-->
+<!--        WHERE t.id = ta.task_id-->
+<!--        and t.instance_id = fi.id-->
+<!--        and ta.actor_type = 0-->
+<!--        and ta.actor_id = #{actorId}-->
+<!--    </select>-->
+
+
+</mapper>

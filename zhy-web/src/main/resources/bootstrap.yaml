@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zhy
+  profiles:
+    active: local
+
+#springdoc:
+#  api-docs:
+#    path: /api/v3/api-docs
+#  swagger-ui:
+#    path: /swagger-ui.html
+#  group-configs:
+#    - group: zhy
+#      paths-to-match: /zhy/**

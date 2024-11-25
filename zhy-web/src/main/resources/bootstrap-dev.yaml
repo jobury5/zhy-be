@@ -1,0 +1,14 @@
+server:
+  port: 8000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.21.181.43:8848
+        namespace: 1d77066b-ac44-4ddc-8b5c-82f9a5c03774
+      config:
+        server-addr: 172.21.181.43:8848
+        namespace: 1d77066b-ac44-4ddc-8b5c-82f9a5c03774
+        file-extension: yaml
+        ext-config[0]:
+          data-id: datasource-dev.yaml

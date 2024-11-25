@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhy.mapper.SysDictDataMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zhy.dataobject.SysDictDataDO">
+        <id column="id" property="id" />
+        <result column="is_valid" property="valid" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="create_by" property="createBy" />
+        <result column="gmt_modify" property="gmtModify" />
+        <result column="modify_by" property="modifyBy" />
+        <result column="dict_sort" property="dictSort" />
+        <result column="dict_label" property="dictLabel" />
+        <result column="dict_label_en" property="dictLabelEn" />
+        <result column="dict_value" property="dictValue" />
+        <result column="dict_type" property="dictType" />
+        <result column="css_class" property="cssClass" />
+        <result column="list_class" property="listClass" />
+        <result column="is_readonly" property="isReadonly" />
+        <result column="is_default_value" property="defaultValue" />
+        <result column="remark" property="remark" />
+        <result column="old_value" property="oldValue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        is_valid,
+        gmt_create,
+        create_by,
+        gmt_modify,
+        modify_by,
+        id, dict_sort, dict_label, dict_label_en, dict_value, dict_type, css_class, list_class, is_readonly, is_default_value, remark, old_value
+    </sql>
+
+</mapper>

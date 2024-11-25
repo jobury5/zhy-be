@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhy.mapper.CrewCertMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zhy.dataobject.CrewCertDO">
+        <id column="id" property="id" />
+        <result column="is_valid" property="valid" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="create_by" property="createBy" />
+        <result column="gmt_modify" property="gmtModify" />
+        <result column="modify_by" property="modifyBy" />
+        <result column="crew_id" property="crewId" />
+        <result column="cert_id" property="certId" />
+        <result column="cert_number" property="certNumber" />
+        <result column="authority" property="authority" />
+        <result column="attach_id" property="attachId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        is_valid,
+        gmt_create,
+        create_by,
+        gmt_modify,
+        modify_by,
+        id, crew_id, cert_id, cert_number, authority, attach_id
+    </sql>
+
+</mapper>
